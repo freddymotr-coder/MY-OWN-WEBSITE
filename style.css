@@ -1075,27 +1075,37 @@ body {
 /*PURPLE SQUARE*/
 
 .cta__box {
-  background-color: #6415ff;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column; /* ADD THIS */
-  align-items: center; /* CHANGE from space-between */
-  text-align: center; /* ADD THIS */
-  padding: 2.5rem 3rem;
-  gap: 24px; /* ADD THIS */
+    background-color: #6415ff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 3rem;
 }
+
 .cta__description {
-  font-size: 1.5rem;
-  color: white;
-  max-width: 400px;
-  text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    max-width: 400px;
+    text-align: left;
 }
 
 .cta__buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    width: auto;
+}
+
+.cta__btn--primary,
+.cta__btn--secondary {
+    width: auto;
+}
+#start .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .cta__btn--primary {
@@ -1108,6 +1118,7 @@ body {
   border: none;
   width: 100%;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .cta__btn--secondary {
@@ -1125,10 +1136,10 @@ body {
 /*FOOTER*/
 
 .footer__links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #6415ff;
+    display: flex;
+    justify-content: space-between;
+    background-color: #6415ff;
+    padding: 60px 0 40px;
 }
 .footer__column li {
     white-space: nowrap;
